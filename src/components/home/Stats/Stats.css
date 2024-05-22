@@ -1,0 +1,38 @@
+.section-stats {
+  padding: 0rem 0 9.6rem 0;
+}
+
+.stats {
+  max-width: 130rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 8rem;
+}
+
+.stat {
+  text-align: center;
+  margin: 0 auto;
+  padding: 1rem 3.2rem;
+}
+
+.number {
+  font-size: 8rem;
+  font-family: "Times New Roman";
+  font-weight: bold;
+  color: #b32454;
+}
+
+.label {
+  font-size: 2rem;
+  font-family: sans-serif;
+  color: #333;
+  margin-top: 1rem;
+}
+
+.divider {
+  height: 8rem;
+  width: 0.1rem;
+  background-color: #b32454;
+}

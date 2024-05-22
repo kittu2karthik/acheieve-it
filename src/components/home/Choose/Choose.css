@@ -1,0 +1,121 @@
+.section-choose {
+  padding: 0rem 0 9.6rem 0;
+}
+
+.choose {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 1rem 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+.choose-icon {
+  margin-bottom: 2.2rem;
+}
+
+.choose-text {
+  font-size: 2rem;
+}
+
+.heading-secondary {
+  color: #1f1f1f;
+  font-size: 3.4rem;
+  font-weight: bold;
+  text-align: start;
+  margin-bottom: 3rem;
+}
+
+.choose-description {
+  color: #4a5568;
+  font-size: 2rem;
+  line-height: 3rem;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+}
+
+.user-images-stats {
+  display: flex;
+  gap: 2rem;
+}
+
+.user-images {
+  width: 100px;
+  height: 100px;
+  height: auto;
+  background-color: rgb(232, 164, 164);
+}
+
+.user-stats span {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1f1f1f;
+}
+
+.user-stats p {
+  font-size: 2rem;
+  color: #12141d;
+}
+
+.choose-card-box {
+  /* background-color: rgb(234, 82, 82); */
+  display: flex;
+  gap: 1rem;
+}
+
+.choose-card {
+  display: flex;
+  /* padding: 2rem 2rem; */
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.col-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.cards-down {
+  padding-top: 10rem;
+}
+.cards {
+  max-width: 25rem;
+
+  font-size: 2rem;
+}
+
+.card {
+  padding: 2rem;
+}
+
+.creative-card img {
+  max-width: 3rem;
+  height: auto;
+  background-color: rgb(255, 109, 109);
+}
+.cards span {
+  display: inline-block;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.cards p {
+  color: #4a5568;
+  line-height: 2.2rem;
+}
+
+.creative-card-border {
+  border: 0.5px solid #aa205e;
+  border-bottom: 10px solid #aa205e;
+}
+.bestfeature-card-border {
+  border: 0.5px solid #82c79a;
+}
+.awesome-card-border {
+  border: 0.5px solid #7ce8ff;
+}
+.easysolutions-card-border {
+  border: 0.5px solid #ffeeb1;
+}

@@ -1,0 +1,64 @@
+/**************************/
+/* HERO SECTION */
+/**************************/
+
+.section-hero {
+  padding: 0rem 0 9.6rem 0;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 1rem 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+  /* height: 80vh; */
+
+  /* background-color: rgb(234, 184, 184); */
+}
+
+/* .hero-text-box {
+  p
+} */
+
+.heading-primary-border {
+  padding: 0rem 3rem;
+  border-left: 5px solid #aa205e;
+  border-radius: 5px 0% 0% 5px;
+}
+
+.heading-primary {
+  color: #1f1f1f;
+  font-size: 4rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.btn-main {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background-color 0.3s;
+  transition: all 0.3s;
+  background-color: #aa205e;
+}
+
+.hero-img-box {
+  background-color: rgb(234, 82, 82);
+  height: 100%;
+}

@@ -1,0 +1,41 @@
+.section-features {
+  padding: 0rem 0 9.6rem 0;
+}
+
+.features {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 1rem 3.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.heading {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading-features-primary {
+  color: #1f1f1f;
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.heading-features-secondary {
+  font-weight: bold;
+  color: #1f1f1f;
+  font-size: 4rem;
+}
+
+.company-logos {
+  display: flex;
+  gap: 8rem;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.company-logo {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(228, 94, 94);
+}
