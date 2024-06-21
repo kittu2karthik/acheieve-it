@@ -52,7 +52,19 @@
   padding: 2rem;
 }
 
-.solutions-card span {
+.solutions-card-inner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+}
+.solutions-card-inner img {
+  display: inline-block;
+  margin: 2rem;
+  width: 5rem;
+}
+
+.solutions-card h4 {
   display: inline-block;
   color: #2d3748;
   font-weight: bold;
@@ -69,4 +81,8 @@
   margin-top: 5rem;
   border: 2px solid #aa205e;
   border-radius: 16px;
+}
+
+.text-red {
+  color: #aa205e !important;
 }

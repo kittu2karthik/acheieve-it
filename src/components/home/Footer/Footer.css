@@ -2,12 +2,15 @@
   background-color: #0b142f;
   color: #c2c2c2;
   min-height: 10rem;
+
   padding: 5rem 8rem;
 }
 
 .footer {
+  max-width: 130rem;
   display: flex;
-  gap: 2rem;
+  gap: 10rem;
+  margin-bottom: 5rem;
 }
 
 .footer-text-box {
@@ -53,7 +56,14 @@
 
 .footer-email-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.footer-logos {
+  display: flex;
+  gap: 2rem;
 }
 
 /* Email */
@@ -92,4 +102,57 @@
 
 .email-arrow {
   font-size: 16px;
+}
+
+.footer-links {
+  display: flex;
+  font-size: 1.5rem;
+}
+
+.footer-links ul {
+  flex-basis: 20rem;
+}
+
+.footer-links li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.footer-links-contact {
+  flex-grow: 1;
+}
+
+/* FooterLine.css */
+
+.footer-line-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-line {
+  flex: 1;
+  height: 1px;
+  background-color: #757575;
+  margin: 0 2rem;
+}
+
+.footer-text {
+  margin: 0;
+  font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer-line {
+    display: none;
+  }
+
+  .footer-text {
+    margin: 10px 0;
+  }
 }

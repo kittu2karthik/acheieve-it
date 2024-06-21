@@ -1,5 +1,9 @@
 import React from "react";
 
+import SolutionsIcon from "../../../assets/images/Services/SolutionsIcon.svg";
+import ApplicationIcon from "../../../assets/images/Services/ApplicationIcon.svg";
+import DevelopmentIcon from "../../../assets/images/Services/DevelopmentIcon.png";
+
 import "./Service.css";
 
 function Service() {
@@ -23,8 +27,10 @@ function SolutionsCard() {
   return (
     <div className="solutions-card">
       <div className="solutions-card-inner">
-        <img src="" alt="" />
-        <span>Solutions</span>
+        <div className="solutions-card-inner-container">
+          <img src={SolutionsIcon} alt="solutions icon" />
+        </div>
+        <h4>Solutions</h4>
         <p>
           We are expertise at software solutions & IT consulting services
           company that focuses on differentiated customer experience,
@@ -39,8 +45,11 @@ function ApplicationSupportCard() {
   return (
     <div className="solutions-card border-red-down">
       <div className="solutions-card-inner">
-        <img src="" alt="" />
-        <span>Application Support</span>
+        <div className="solutions-card-inner-container">
+          <img src={ApplicationIcon} alt="application icon" />
+        </div>
+
+        <h4 className="text-red">Application Support</h4>
         <p>
           Application Support Analysts support IT services delivered to users
           within an organisation, enabling the required business processes
@@ -55,8 +64,10 @@ function DevelopmentCard() {
   return (
     <div className="solutions-card">
       <div className="solutions-card-inner">
-        <img src="" alt="" />
-        <span>Development</span>
+        <div className="solutions-card-inner-container">
+          <img src={DevelopmentIcon} alt="development icon" />
+        </div>
+        <h4>Development</h4>
         <p>
           We are a leading software development company that offers top-rated
           Software Development Services due to our vast experience, team of

@@ -2,7 +2,7 @@
 
 const express = require("express");
 const jobPostingController = require("./../controllers/jobPostingController");
-const authController = require("./../controllers/authController");
+// const authController = require("./../controllers/authController");
 
 const router = express.Router();
 

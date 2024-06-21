@@ -1,5 +1,14 @@
 import React, { useState } from "react";
 
+import Facebook from "../../../assets/images/Footer/FaceBook.svg";
+import Instagram from "../../../assets/images/Footer/Instagram.svg";
+import Telegram from "../../../assets/images/Footer/Telegram.svg";
+import WhatsApp from "../../../assets/images/Footer/WhatsApp.svg";
+import X from "../../../assets/images/Footer/X.svg";
+
+import Icon from "../../../assets/images/Footer/Icon.svg";
+import RightArrow from "../../../assets/images/Footer/arrow-right.svg";
+
 import "./Footer.css";
 
 function Footer() {
@@ -9,6 +18,7 @@ function Footer() {
         <FooterTextBox />
         <FooterLinksBox />
       </footer>
+      <FooterLine />
     </section>
   );
 }
@@ -32,19 +42,19 @@ function FooterTextBox() {
       </p>
       <div className="footer-logos">
         <div>
-          <img src="" alt="" />
+          <img src={Facebook} alt="Facebook Logo" />
         </div>
         <div>
-          <img src="" alt="" />
+          <img src={Instagram} alt="Instagram Logo" />
         </div>
         <div>
-          <img src="" alt="" />
+          <img src={WhatsApp} alt="WhatsApp Logo" />
         </div>
         <div>
-          <img src="" alt="" />
+          <img src={Telegram} alt="Telegram Logo" />
         </div>
         <div>
-          <img src="" alt="" />
+          <img src={X} alt="X Logo" />
         </div>
       </div>
     </div>
@@ -67,12 +77,11 @@ function FooterLinksBox() {
   return (
     <div className="footer-links-box">
       <div className="footer-email-container">
-        <img src="" alt="" />
+        <img src={Icon} alt="Icon" />
         <div className="footer-email">
           <h3>Enter Your Email</h3>
           <p>Our colleagues will contact you soon</p>
         </div>
-
         <form onSubmit={handleSubmit} className="email-form">
           <input
             type="email"
@@ -86,10 +95,84 @@ function FooterLinksBox() {
             <span className="email-arrow">&rarr;</span>
           </button>
         </form>
-
-        {/* <EmailInput /> */}
       </div>
-      <div className="footer-links"></div>
+      <FooterLinks />
+    </div>
+  );
+}
+
+function FooterLinks() {
+  return (
+    <div className="footer-links">
+      <FooterCategoryLinks />
+      <FooterUsefulLinks />
+      <FooterContactUs />
+    </div>
+  );
+}
+
+function FooterCategoryLinks() {
+  return (
+    <ul className="footer-links-lists">
+      <li>
+        <img src={RightArrow} alt="Right Arrow" className="right-arrow" /> Home
+      </li>
+      <li>
+        <img src={RightArrow} alt="Right Arrow" className="right-arrow" /> About
+      </li>
+      <li>
+        <img src={RightArrow} alt="Right Arrow" className="right-arrow" /> Team
+      </li>
+      <li>
+        <img src={RightArrow} alt="Right Arrow" className="right-arrow" /> FAQs
+      </li>
+      <li>
+        <img src={RightArrow} alt="Right Arrow" className="right-arrow" />{" "}
+        More...
+      </li>
+    </ul>
+  );
+}
+function FooterUsefulLinks() {
+  return (
+    <ul className="footer-links-lists">
+      <li>
+        <img src={RightArrow} alt="Right Arrow" className="right-arrow" />{" "}
+        Software Development
+      </li>
+      <li>
+        <img src={RightArrow} alt="Right Arrow" className="right-arrow" /> AI
+        Programer
+      </li>
+      <li>
+        <img src={RightArrow} alt="Right Arrow" className="right-arrow" />{" "}
+        System Application
+      </li>
+      <li>
+        <img src={RightArrow} alt="Right Arrow" className="right-arrow" />{" "}
+        Network Solution
+      </li>
+    </ul>
+  );
+}
+function FooterContactUs() {
+  return (
+    <div className="footer-links-contact">
+      <span> USA Address</span>
+
+      <p>5490 McGjinnis Village Place, Suite #120, Alphanetta, GA 30005, USA</p>
+    </div>
+  );
+}
+
+function FooterLine() {
+  return (
+    <div className="footer-line-container">
+      <div className="footer-line"></div>
+      <p className="footer-text">
+        © 2024 | All Rights Reserved | Powered by Achieva IT
+      </p>
+      <div className="footer-line"></div>
     </div>
   );
 }

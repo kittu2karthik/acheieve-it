@@ -1,5 +1,3 @@
-/* Header.css */
-
 .header {
   display: flex;
   max-width: 130rem;
@@ -13,12 +11,13 @@
 
 .logo a {
   display: flex;
+  gap: 2rem;
   text-decoration: none;
 }
 
-/* .logo img {
-  height: 2.4rem;
-} */
+.logo img {
+  height: 5rem;
+}
 
 .logo p {
   color: #16205f;
