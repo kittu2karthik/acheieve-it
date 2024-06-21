@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import hero from "./hero.png";
+import HeroImg from "../../../assets/images/Hero/Hero-img.png";
 
 import "./Hero.css";
 
@@ -36,7 +36,7 @@ function HeroTextBox() {
 function HeroImgBox() {
   return (
     <div className="hero-img-box">
-      <img src={hero} alt="Hero-img" height={"100px"} width={"100px"} />
+      <img src={HeroImg} alt="Hero-img" height={"100px"} width={"100px"} />
       {/* <image src="../../images/Hero-img.png" alt="Hello" width="100px" /> */}
     </div>
   );

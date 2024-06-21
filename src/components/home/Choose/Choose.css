@@ -12,6 +12,9 @@
   align-items: center;
 }
 .choose-icon {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
   margin-bottom: 2.2rem;
 }
 
@@ -37,14 +40,12 @@
 
 .user-images-stats {
   display: flex;
+  align-items: center;
   gap: 2rem;
 }
 
 .user-images {
-  width: 100px;
-  height: 100px;
   height: auto;
-  background-color: rgb(232, 164, 164);
 }
 
 .user-stats span {
@@ -83,12 +84,19 @@
 }
 .cards {
   max-width: 25rem;
-
   font-size: 2rem;
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
   padding: 2rem;
+}
+
+.card img {
+  width: 5rem;
+  height: 5rem;
 }
 
 .creative-card img {

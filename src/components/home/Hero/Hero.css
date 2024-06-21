@@ -14,14 +14,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 9.6rem;
   align-items: center;
-  /* height: 80vh; */
-
-  /* background-color: rgb(234, 184, 184); */
 }
-
-/* .hero-text-box {
-  p
-} */
 
 .heading-primary-border {
   padding: 0rem 3rem;
@@ -59,6 +52,9 @@
 }
 
 .hero-img-box {
-  background-color: rgb(234, 82, 82);
   height: 100%;
+}
+.hero-img-box img {
+  width: 100%;
+  height: auto;
 }

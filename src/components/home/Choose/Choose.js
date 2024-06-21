@@ -1,4 +1,13 @@
 import React from "react";
+import ChooseIcon from "../../../assets/images/Choose/ChooseIcon.svg";
+
+import CreativeDesignIcon from "../../../assets/images/Choose/CreativeDesignIcon.svg";
+import AwesomeDesignIcon from "../../../assets/images/Choose/AwesomeDesignIcon.svg";
+import BestFeaturesIcon from "../../../assets/images/Choose/BestFeautesIcon.png";
+import EasySolutionsIcon from "../../../assets/images/Choose/EasySolutionsIcon.svg";
+
+import CustomerImages from "../../../assets/images/Choose/CustomerImages.png";
+
 import "./Choose.css";
 
 function Choose() {
@@ -18,7 +27,7 @@ function ChooseTextBox() {
   return (
     <div className="choose-text-box">
       <div className="choose-icon">
-        <img src="" alt="" />
+        <img src={ChooseIcon} alt="choose icon" />
         <span className="choose-text">Why We Are Best</span>
       </div>
 
@@ -29,7 +38,9 @@ function ChooseTextBox() {
       </p>
 
       <div className="user-images-stats">
-        <div className="user-images"></div>
+        <div className="user-images">
+          <img src={CustomerImages} alt="customer-images" />
+        </div>
         <div className="user-stats">
           <span>5M+</span>
           <p>Active Members</p>
@@ -59,7 +70,7 @@ function CreativeCard() {
   return (
     <div className="cards">
       <div className="card creative-card-border">
-        <img src="" alt="" />
+        <img src={CreativeDesignIcon} alt="creative-design icon" />
         <span>Creative Ideas</span>
         <p>Idea generation is a creative process to</p>
       </div>
@@ -70,7 +81,8 @@ function BestFeatures() {
   return (
     <div className="cards">
       <div className="card bestfeature-card-border">
-        <img src="" alt="" />
+        <img src={BestFeaturesIcon} alt="best-features icon" />
+
         <span>Best Features</span>
         <p>Things most notable or outstanding the </p>
       </div>
@@ -81,7 +93,8 @@ function AwesomeDesign() {
   return (
     <div className="cards">
       <div className="card awesome-card-border">
-        <img src="" alt="" />
+        <img src={AwesomeDesignIcon} alt="awesome-design icon" />
+
         <span>Awesome Design</span>
         <p>A career in design allows creative individuals </p>
       </div>
@@ -92,7 +105,7 @@ function EasySolutions() {
   return (
     <div className="cards">
       <div className="card easysolutions-card-border">
-        <img src="" alt="" />
+        <img src={EasySolutionsIcon} alt="easy-solutions icon" />
         <span>Easy Solutions</span>
         <p>With less than a week to go for the </p>
       </div>

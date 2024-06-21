@@ -1,4 +1,11 @@
 import React from "react";
+
+import Image1 from "../../../assets/images/AboutUs/AboutUsImage1.png";
+import Image2 from "../../../assets/images/AboutUs/AboutUsImage2.png";
+import Image3 from "../../../assets/images/AboutUs/AboutUsImage3.png";
+
+import AboutUsIcon from "../../../assets/images/AboutUs/AboutUs.svg";
+
 import "./AboutUs.css";
 
 function AbouUs() {
@@ -15,13 +22,33 @@ function AbouUs() {
 export default AbouUs;
 
 function AboutUsImgBox() {
-  return <div className="aboutus-img-box">image</div>;
+  return (
+    <div className="aboutus-img-box">
+      <div className="image-container">
+        <div className="image-container-left">
+          <img src={Image1} alt="working people" />
+        </div>
+        <div className="image-container-right">
+          <img
+            src={Image2}
+            alt="working people"
+            className="image-container-right-1"
+          />
+          <img
+            src={Image3}
+            alt="working people"
+            className="image-container-right-2"
+          />
+        </div>
+      </div>
+    </div>
+  );
 }
 function AboutUsTextBox() {
   return (
     <div className="aboutus-text-box">
       <div className="aboutus-icon">
-        <img src="" alt="" />
+        <img src={AboutUsIcon} alt="About us icon" />
         <span className="aboutus-text">About Us</span>
       </div>
       <h2 className="heading-secondary">Our Company Overview</h2>
